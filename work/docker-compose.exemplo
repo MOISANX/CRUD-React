@@ -1,0 +1,14 @@
+
+
+version: "3.8"
+
+services:
+  postgres:
+    container_name: _postgres
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=username
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=nome_do_banco
